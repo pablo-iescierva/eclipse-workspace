@@ -1,0 +1,15 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		Punto p1 = new Punto(10, 20);
+		
+		p1.cuadrante();
+		
+		double distancia = p1.distancia();
+		
+		System.out.println("La distancia es: "+distancia);
+
+	}
+
+}

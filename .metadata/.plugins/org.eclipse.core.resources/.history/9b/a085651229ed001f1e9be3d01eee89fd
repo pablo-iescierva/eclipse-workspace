@@ -1,0 +1,32 @@
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+public class Ejercicio2 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("DNI / NIE: ");
+		String pregunta = sc.nextLine();
+		
+		if (pregunta == "DNI") {
+			
+			String regexDNI = "^[0-9][TRWAGMYFPDXBNJZSQVHLCKE]$";
+			
+			System.out.println("Introduce un DNI: ");
+			String dni = sc.nextLine();
+			
+			Pattern patron = Pattern.compile(regex);
+			Matcher concordancia = patron.matcher(dni);
+		} else if (pregunta == "NIE") {
+			System.out.println("Introduce un NIE: ");
+			String nie = sc.nextLine();
+		} else {
+			System.out.println("opcion no encontrada");
+		}
+		
+		sc.close();
+		
+	}
+
+}

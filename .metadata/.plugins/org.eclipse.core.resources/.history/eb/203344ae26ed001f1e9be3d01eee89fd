@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Ejercicio2 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Introduzca un nombre de usuario: ");
+		String dni = sc.nextLine();
+		
+		if (dni.matches("^[a-zA-Z][a-zA-Z0-9-_#$%?=+-]{9}$")) {
+			System.out.println("Datos correctos.");
+		}else {
+			System.out.println("Datos incorrectos.");
+		}		
+		
+		
+		sc.close();
+	}
+
+}
